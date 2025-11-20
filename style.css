@@ -1,0 +1,12 @@
+@font-face {
+    font-family: GNUUnifont;
+    src: url(assets/fonts/unifont_jp-17.0.03.otf);
+}
+
+body {
+    background-color: #000000;
+}
+
+img {
+    image-rendering: pixelated;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio Website">
+        <meta name="keywords" content="">
+        <meta name="author" content="m_sef">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="window">
+            <!-- Title Bar -->
+            <div class="title-bar">
+                <div class="title-bar-text">m_sef's Super Duper Awesome Website!</div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <!-- Window Body -->
+            <div class="window-body">
+                <!-- Tab List -->
+                <menu role="tablist">
+                    <li role="tab" data-tab="home"><a href="#tabs">Home</a></li>
+                    <li role="tab" data-tab="about"><a href="#tabs">About</a></li>
+                    <li role="guestbook" data-tab="guestbook"><a href="#tabs">Guestbook</a></li>
+                </menu>
+
+                <!-- Home Tab Panel -->
+                <div class="window" role="tabpanel" data-tab="home">
+                    <div class="window-body">
+                        <p></p>
+                        <img src="assets/images/haniwa-keikou-warrior.png">
+                    </div>
+                </div>
+
+                <!-- About Tab Panel -->
+                 <div class="window" role="tabpanel" data-tab="about">
+                    <div class="window-body">
+                        <h3>About</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

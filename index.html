@@ -8,7 +8,7 @@
     <meta name="author" content="m_sef">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -28,70 +28,55 @@
         <div class="window-body">
             <!-- Tab List -->
             <menu role="tablist">
-                <li role="tab" data-tab="home"><a href="#tabs">Home</a></li>
-                <li role="tab" data-tab="projects"><a href="#tabs">Projects</a></li>
-                <li role="tab" data-tab="about"><a href="#tabs">About</a></li>
-                <li role="tab" data-tab="guestbook"><a href="#tabs">Guestbook</a></li>
+                <button role="tab" aria-controls="tab-home">Home</button>
+                <button role="tab" aria-controls="tab-projects">Projects</button>
+                <button role="tab" aria-controls="tab-about">About</button>
+                <button role="tab" aria-controls="tab-guestbook">Guestbook</button>
             </menu>
 
             <!-- Home Tab Panel -->
-            <div class="window" role="tabpanel" data-tab="home">
-                <div class="window-body">
-                    <h5 style="text-align: center;">Welcome to my website... I guess.....</h5>
+            <article role="tabpanel" id="tab-home">
+                <h5 style="text-align: center;">Welcome to my website... I guess.....</h5>
+                <hr>
+                <img src="assets/images/roses.gif">
 
-                    <hr>
+                <p>There really isn't much here... I hope you aren't too dissapointed.</p>
+            </article>
 
-                    <img src="assets/images/roses.gif">
+            <!-- Projects Tab Panel -->
+            <article role="tabpanel" id="tab-projects">
+                <h5 style="text-align: center;">Things I am involved in...</h5>
+                <hr>
+                <img src="assets/images/roses.gif">
 
-                    <p>There really isn't much here... I hope you aren't too dissapointed.</p>
-                </div>
-            </div>
-
-            <!-- Projects Panel -->
-            <div class="window" role="tabpanel" data-tab="projects">
-                <div class="window-body">
-                    <h5 style="text-align: center;">Things I am involved in...</h5>
-
-                    <hr>
-
-                    <img src="assets/images/roses.gif">
-
-                    <ul>
-                        <li><a href="https://github.com/publiusys/ecko">ECKO: Energy and Carbon control for Kubernetes Orchestration</a></li>
-                        <li><a href="https://m-sef.itch.io/">Indie Game Development</a></li>
-                    </ul>
-                </div>
-            </div>
+                <ul>
+                    <li><a href="https://github.com/publiusys/ecko">ECKO: Energy and Carbon control for Kubernetes Orchestration</a></li>
+                    <li><a href="https://m-sef.itch.io/">Indie Game Development</a></li>
+                </ul>
+            </article>
 
             <!-- About Tab Panel -->
-            <div class="window" role="tabpanel" data-tab="about">
-                <div class="window-body">
-                    <h5 style="text-align: center;">About</h5>
+            <article role="tabpanel" id="tab-about">
+                <h5 style="text-align: center;">About</h5>
+                <hr>
+                <img src="assets/images/roses.gif">
 
-                    <hr>
-
-                    <img src="assets/images/roses.gif">
-
-                    <p>I am <b>m_sef</b>. (He/Him)</p>
+                <p>I am <b>m_sef</b>. (He/Him)</p>
                     <ul>
                         <li>Undergraduate student studying Computer Science and Japanese</li>
                         <li>Hobbyist Indie Game Developer</li>
                         <li>Purveyor of an incredible many programming languages</li>
                         <li>Foil Fencer</li>
                     </ul>
-                </div>
-            </div>
+            </article>
 
             <!-- Guestbook Panel -->
-            <div class="window" role="tabpanel" data-tab="guestbook">
-                <div class="window-body">
-                    <h5 style="text-align: center;">Guestbook</h5>
+            <article role="tabpanel" id="tab-guestbook">
+                <h5 style="text-align: center;">Guestbook</h5>
+                <hr>
+                <img src="assets/images/roses.gif">
 
-                    <hr>
-
-                    <img src="assets/images/roses.gif">
-
-                    <p>TODO</p>
+                <p>TODO</p>
                     <ul>
                         <li>Home Tab Panel Content</li>
                         <li>Project Tab Panel Content</li>
@@ -102,8 +87,7 @@
                         <li>Evil Canvas Background</li>
                         <li>Guestbook using Firebase?</li>
                     </ul>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
 </body>

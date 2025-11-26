@@ -1,11 +1,7 @@
-@font-face {
-    font-family: GNUUnifont;
-    src: url(assets/fonts/unifont_jp-17.0.03.otf);
-}
-
 body {
     background-color: black;
-    background-image: url("assets/images/haniwa-keikou-warrior.png");
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 img {

@@ -4,9 +4,14 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: black;
+    background-image: url("assets/images/haniwa-keikou-warrior.png");
 }
 
 img {
     image-rendering: pixelated;
+}
+
+#draggable {
+    position: absolute;
 }

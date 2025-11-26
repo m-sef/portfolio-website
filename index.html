@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Metadata -->
-        <meta charset="UTF-8">
-        <meta name="description" content="Portfolio Website">
-        <meta name="keywords" content="">
-        <meta name="author" content="m_sef">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="">
+    <meta name="author" content="m_sef">
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://unpkg.com/98.css">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <div class="window">
-            <!-- Title Bar -->
-            <div class="title-bar">
-                <div class="title-bar-text">m_sef's Super Duper Awesome Website!</div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="window" id="draggable">
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <div class="title-bar-text">m_sef's Website</div>
 
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- Window Body -->
+        <div class="window-body">
+            <!-- Tab List -->
+            <menu role="tablist">
+                <li role="tab" data-tab="home"><a href="#tabs">Home</a></li>
+                <li role="tab" data-tab="projects"><a href="#tabs">Projects</a></li>
+                <li role="tab" data-tab="about"><a href="#tabs">About</a></li>
+                <li role="tab" data-tab="guestbook"><a href="#tabs">Guestbook</a></li>
+            </menu>
+
+            <!-- Home Tab Panel -->
+            <div class="window" role="tabpanel" data-tab="home">
+                <div class="window-body">
+                    <h5 style="text-align: center;">Welcome to my website... I guess.....</h5>
+
+                    <hr>
+
+                    <img src="assets/images/roses.gif">
+
+                    <p>There really isn't much here... I hope you aren't too dissapointed.</p>
                 </div>
             </div>
 
-            <!-- Window Body -->
-            <div class="window-body">
-                <!-- Tab List -->
-                <menu role="tablist">
-                    <li role="tab" data-tab="home"><a href="#tabs">Home</a></li>
-                    <li role="tab" data-tab="about"><a href="#tabs">About</a></li>
-                    <li role="guestbook" data-tab="guestbook"><a href="#tabs">Guestbook</a></li>
-                </menu>
+            <!-- Projects Panel -->
+            <div class="window" role="tabpanel" data-tab="projects">
+                <div class="window-body">
+                    <h5 style="text-align: center;">Things I am involved in...</h5>
 
-                <!-- Home Tab Panel -->
-                <div class="window" role="tabpanel" data-tab="home">
-                    <div class="window-body">
-                        <p></p>
-                        <img src="assets/images/haniwa-keikou-warrior.png">
-                    </div>
+                    <hr>
+
+                    <img src="assets/images/roses.gif">
+
+                    <ul>
+                        <li><a href="https://github.com/publiusys/ecko">ECKO: Energy and Carbon control for Kubernetes Orchestration</a></li>
+                        <li><a href="https://m-sef.itch.io/">Indie Game Development</a></li>
+                    </ul>
                 </div>
+            </div>
 
-                <!-- About Tab Panel -->
-                 <div class="window" role="tabpanel" data-tab="about">
-                    <div class="window-body">
-                        <h3>About</h3>
-                    </div>
+            <!-- About Tab Panel -->
+            <div class="window" role="tabpanel" data-tab="about">
+                <div class="window-body">
+                    <h5 style="text-align: center;">About</h5>
+
+                    <hr>
+
+                    <img src="assets/images/roses.gif">
+
+                    <p>I am <b>m_sef</b>. (He/Him)</p>
+                    <ul>
+                        <li>Undergraduate student studying Computer Science and Japanese</li>
+                        <li>Hobbyist Indie Game Developer</li>
+                        <li>Purveyor of an incredible many programming languages</li>
+                        <li>Foil Fencer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Guestbook Panel -->
+            <div class="window" role="tabpanel" data-tab="guestbook">
+                <div class="window-body">
+                    <h5 style="text-align: center;">Guestbook</h5>
+
+                    <hr>
+
+                    <img src="assets/images/roses.gif">
+
+                    <p>TODO</p>
+                    <ul>
+                        <li>Home Tab Panel Content</li>
+                        <li>Project Tab Panel Content</li>
+                        <li>About Tab Panel Content</li>
+
+                        <li>Draggable Window</li>
+                        <li>Desktop Taskbar</li>
+                        <li>Evil Canvas Background</li>
+                        <li>Guestbook using Firebase?</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
